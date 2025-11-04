@@ -2,17 +2,18 @@ run=True
 
 bag=[]
 
-print("Heyo")
-print("View inventory [V]")
-print("Save information [S]")
-print("Quit the program [Q]")
-print()
-
+print("For options input [O]")
 while run==True:
+    print("Heyo")
     choice=input("What's the plan big man ")
     if choice.lower()== "v":
         for thing in bag:
             print(thing)
+    elif choice.lower()=="o":
+        print("View inventory [V]")
+        print("Save information [S]")
+        print("Quit the program [Q]")
+        print()
     elif choice.lower() == "q":
         run=False
     elif choice.lower()=="s":
